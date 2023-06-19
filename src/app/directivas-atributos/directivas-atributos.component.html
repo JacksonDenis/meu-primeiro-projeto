@@ -1,0 +1,20 @@
+<p [ngClass]="{'active': valor, 'disabled': !valor}">ngClass</p>
+
+<p [ngStyle]="{'height': height }">ngStyle</p>
+
+<p>ngModel</p>
+
+<input [(ngModel)]="nome"> {{nome}}
+
+<button (click)="salvar()">Salvar</button>
+<li *ngFor="let item of list ">{{ item.nome }}</li>
+
+<ng-template ngFor let-item [ngForof] = "list">
+    <p>
+        true jackson denis rodrigues da costa {{item.nome}}
+    </p>
+
+</ng-template>
+
+
+<ng-content></ng-content>

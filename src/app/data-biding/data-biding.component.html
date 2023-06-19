@@ -1,0 +1,25 @@
+<P>Me nome é {{ nome }} tenho {{ idade }} anos</P>>
+
+{{ idade }}
+
+<p>data-biding works!</p>
+
+
+<hr>
+<h2>Property Binding</h2>
+
+<button [disabled]="checkDisebled">Jackson</button>
+<br>
+
+<img [src]="imgSrc" [alt]="Title">
+
+<h2>Event Binding</h2>
+
+<button (click) = "alertaInfo($event)">Evento</button>
+
+<div (mousemove)="mouseMoveTeste($event)" style="background-color: red; width: 300px; height: 300px;"></div>
+
+<br>
+<br>
+
+<h2>Tho-way Binding</h2>
